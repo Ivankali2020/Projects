@@ -1,0 +1,8 @@
+$theme-colors: (
+  "primary": #2596ca,
+  "danger": hsl(0, 3%, 77%),
+  "secondary":green
+);
+$border-radius : 2rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap";

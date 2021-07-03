@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<div class="loading">
+    <div class="lds-facebook"><div></div><div></div><div></div></div>
+</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- faceboook link share linking -->
+     <meta name="description" content="Best IT Solutions in Yangon"/>
+     <meta name="keywords" content="mms, mms it, it service, best it service, php class, web developer, web class"/>
+     <meta name="author" content="MMS Developer Team"/>
+ 
+ 
+     <!-- Facebook and Twitter integration -->
+     <meta property="og:title" content="Best IT Solutions in Yangon"/>
+     <meta property="og:image" content="https://mms-it.com/profile/images/site-img.jpg"/>
+     <meta property="og:url" content="http://mms-it.com/"/>
+     <meta property="og:site_name" content="MMS One Stop IT Solutions"/>
+     <meta property="og:description" content="နည်းပညာ အခက်အခဲများ အတွက် MMS IT မှ ကူညီပေးလျှက်ရှိပါတယ်။ လူကြီးမင်းတို့၏ စီးပွားရေး လုပ်ငန်းများကိုနည်းပညာဖြင့် အဆင့်မြှင့်တင်နိုင်ဖို့ အခုပဲ ဆက်သွယ်လိုက်ပါ။"/>
+ 
+     <link rel="shortcut icon" href="https://mms-it.com/profile/images/logo.png">
+     <!-- faceboook link share linking -->
+
+
+    <link rel="stylesheet" href="scss/app.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css" >
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <title>Profile Website</title>
+    <style>
+        .loading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 2000;
+        }
+        .lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: rgb(243, 182, 182);
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="container-fluid navigation animated fadeInLeft  " >
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 ">
+                        
+                           
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-light container">
+                                
+                                    
+                                   <div class="wow rotateIn" data-wow-delay=".3s">
+                                       <img src="img/logo-small.png " class="w-100" alt="" srcset="">                       
+                                   </div>
+                                   <button class="navbar-toggler " id="hanbargarMenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars fs-1" id="bar_cu"></i>
+                                  </button>
+                                  <div class="collapse navbar-collapse flex-grow-0 align-self-end" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item me-2 text-uppercase wow bounceInDown" data-wow-delay=".5s">
+                                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                                      </li>
+                                      <li class="nav-item me-2 text-uppercase wow bounceInDown" data-wow-delay=".4s">
+                                        <a class="nav-link" href="#service">Service</a>
+                                      </li>
+                                      <li class="nav-item me-2 text-uppercase wow bounceInDown" data-wow-delay=".3s">
+                                        <a class="nav-link" href="#contant">Contant</a>
+                                      </li>
+                                      <li class="nav-item me-2 text-uppercase wow bounceInDown" data-wow-delay=".2s">
+                                        <a class="nav-link" href="#blog">blog</a>
+                                      </li>
+                                      <li class="nav-item me-2 text-uppercase wow bounceInDown" data-wow-delay=".1s">
+                                        <a class="nav-link" href="#about">About</a>
+                                      </li>
+                                     
+                                     
+                                    </ul>
+                                    
+                                </div>
+                              </nav> 
+                     
+                    </div>
+                    <div class="menuBar d-none px-5 animated">
+                        <div class="d-flex justify-content-between align-items-center py-2 mb-4">
+                            <img src="img/logo-small.png" alt="" srcset="">
+                            <button type="button" class="btn-close closeMenu"  aria-label="Close"></button>
+                        </div>
+                        <div class="">
+                            <ul class=" list-unstyled">
+                                <li class="mb-4 text-center list "><a class=" text-decoration-none text-dark  closeMenu"  href="#home">Home</a></li>
+                                <li class="mb-4 text-center list "><a class=" text-decoration-none text-dark  closeMenu" href="#service">Service</a></li>
+                                <li class="mb-4 text-center list "><a class=" text-decoration-none text-dark   closeMenu" href="#contant">Contact Us</a></li>
+                                <li class="mb-4 text-center list "><a class=" text-decoration-none text-dark   closeMenu" href="#blog">Blog</a></li>
+                                <li class="mb-4 text-center list "> <a class="text-decoration-none text-dark    closeMenu   " href="#about">about</a></li>
+                                 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="sOne container-fluid " id="home">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row justify-content-evenly flex-column-reverse flex-md-row align-items-md-center  vh-100 my-md-5">
+                        <div class="animated slideInLeft col-md-6 text-center text-xl-start bg_custom p-5 " style="background-image: url(img/bg-2.svg);">
+                                <h4 class="text-uppercase ">Social Media</h4>
+                                <h1 class="text-uppercase text-primary  fw-bolder">For business</h1>
+                                <p class="text-uppercase text-black-50 my-2 my-md-3">PERFORMANCE BASED SOCIAL MEDIA AGENCY. <br>
+                                    WE ARE LOREM MEDIA
+                                </p>
+                                <a class="wow slideInLeft text-uppercase  p-2 px-md-5 btn btn-primary text-white fw-light" data-wow-delay=".3s">get a free audit</a>
+                        </div>
+                        <div class="wow slideInRight  pt-5 pt-md-0  col-12 col-md-6 text-center text-xl-right" data-wow-delay=".3s">
+                            <img src="img/content-1.svg" class="picTwo w-100" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="socialBar">
+                <ul class=" list-unstyled d-flex flex-column justify-content-between align-items-center text-primary">
+                    <li class="wow slideInDown" data-wow-delay="1s"><i class="fa fa-facebook-f"></i></li>
+                    <li class="wow slideInDown" data-wow-delay=".8s"><i class="fa fa-google"></i></li>
+                    <li class="wow slideInDown" data-wow-delay=".6s"><i class="fa fa-youtube-play"></i></li>
+                    <li class="wow slideInDown" data-wow-delay=".4s"><i class="fa fa-instagram"></i></li>
+                    <li class="wow slideInDown  bar bg-danger" data-wow-delay=".2s"></li>
+                </ul>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center ">
+                <a class="mouse" href="#service" >
+                    <img src="img/mouse.svg" alt="" srcset="" class="wow bounceIn" data-wow-iteration="10000">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sTwo container-fluid bg-danger pt-5 pt-md-0" id="service">
+        <div class="row pt-5 pt-md-0">
+            <div class="col-12">
+                <div class="container px-sm-0">
+                    <div class="row  align-items-center vh-100 mb-0 my-md-5">
+                        <div class="wow fadeIn col-12 col-md-6 text-center text-xl-start mb-4 mb-md-0 ">
+
+                            <img src="img/content-2.svg" class="w-100" alt="" srcset="">
+                                
+                        </div>
+                        <div class="wow rollIn col-md-6  mb-3 mb-md-0 text-xl-right bg_custom p-0 p-md-5">
+
+                            <h6 class="text-primary">Biography</h6>
+                            <h4 class="text-uppercase">who we are?</h4>
+                            <p class="my-2 my-md-4 text-justify text-black-50 wow slideInLeft" data-wow-delay=".2s">
+                                    Lorem Media is a full-service social media agency. We offer businesses innovative solutions that deliver the right type of audience to you in the most effective strategies possible. We strive to develop a community around your business, polishing your branding, and improving your public relations. Social Media is now one of the most powerful marketing tools with the ability to communicate with a target audience in real time.
+                        
+                            </p>
+                            <p class=""> It's 2019: time to sink or swim.</p>
+                            <a href="#" class="btn btn-primary text-uppercase px-3">see more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sThree container-fluid pt-5" id="contant">
+        <div class="row ">
+            <div class="col-12">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="my-5 wow bounceIn">
+
+                                <h6 class="text-primary">Our Service</h6>
+                                <h4 class="text-uppercase">WHAT WE OFFER ?</h4>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 my-4 wow fadeInLeft" data-wow-delay=".8s">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body ">
+                                    <div class=" mb-4">
+                                        <img src="img/icon-1.svg" alt="" srcset="">
+                                    </div>
+                                    <p class="fw-bold text-primary ">CONTENT MARKETING SERVICES</p>
+                                    <p class="my-4 text-black-50 jText">
+                                        We can create and provide your company with the best content marketing for your socials to improve online presence. Creating valuable and quality content helps boost conversions and improve customer retention
+                                    </p>
+                                    <a href="#" class="btn btn-primary float-end fw-light text-white">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 my-4 wow fadeInLeft" data-wow-delay=".4s">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body ">
+                                    <div class=" mb-4">
+                                        <img src="img/icon-2.svg" alt="" srcset="">
+                                    </div>
+                                    <p class="fw-bold text-primary ">SOCIALS GROWTH CAMPAIGN</p>
+                                    <p class="my-4 text-black-50 jText">
+                                        Our social growth campaign will have your socials come alive. With constant growth and engagement you will be sure to have the thriving you’ve been looking for.
+                                    </p>
+                                    <a href="#" class="btn btn-primary float-end fw-light text-white">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 my-4 wow fadeInLeft" data-wow-delay=".2s">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body ">
+                                    <div class=" mb-4">
+                                        <img src="img/icon-3.svg" alt="" srcset="">
+                                    </div>
+                                    <p class="fw-bold text-primary ">CONTENT MARKETING SERVICES</p>
+                                    <p class="my-4 text-black-50 jText">
+                                        Done right, branding offers a company an edge over the competition. So what exactly is branding, and why is it important for companies to integrate a well-rounded branding and media strategy?
+                                    </p>
+                                    <a href="#" class="btn btn-primary float-end fw-light text-white">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 my-4 wow fadeInRight " data-wow-delay=".8s">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body ">
+                                    <div class=" mb-4">
+                                        <img src="img/icon-4.svg" alt="" srcset="">
+                                    </div>
+                                    <p class="fw-bold text-primary ">SOCIALS GROWTH CAMPAIGN</p>
+                                    <p class="my-4 text-black-50 jText">
+                                        We can create and provide your company with the best content marketing for your socials to improve online presence. Creating valuable and quality content helps boost conversions and improve customer retention.
+                                    </p>
+                                    <a href="#" class="btn btn-primary float-end fw-light text-white">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 my-4 wow fadeInRight " data-wow-delay=".4s">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body ">
+                                    <div class=" mb-4">
+                                        <img src="img/icon-5.svg" alt="" srcset="">
+                                    </div>
+                                    <p class="fw-bold text-primary ">SOCIALS GROWTH CAMPAIGN</p>
+                                    <p class="my-4 text-black-50 jText">
+                                        We can create and provide your company with the best content marketing for your socials to improve online presence. Creating valuable and quality content helps boost conversions and improve customer retention.
+                                    </p>
+                                    <a href="#" class="btn btn-primary float-end fw-light text-white">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 my-4 wow fadeInRight " data-wow-delay=".2s">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body ">
+                                    <div class=" mb-4">
+                                        <img src="img/icon-6.svg" alt="" srcset="">
+                                    </div>
+                                    <p class="fw-bold text-primary ">SOCIALS GROWTH CAMPAIGN</p>
+                                    <p class="my-4 text-black-50 jText">
+                                        We can create and provide your company with the best content marketing for your socials to improve online presence. Creating valuable and quality content helps boost conversions and improve customer retention.
+                                    </p>
+                                    <a href="#" class="btn btn-primary float-end fw-light text-white">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sFour container-fluid mb-md-5 pt-5" id="blog">
+        <div class="row ">
+            <div class="col-12">
+                <div class="container vh-100 ">
+                     <div class="col-12 wow fadeIn">
+                        <div class="my-5 text-center wow rotateIn">
+
+                            <h6 class="text-primary">Pricing</h6>
+                            <h4 class="text-uppercase">OUR PRICING</h4>
+                        </div>
+                    </div>
+
+                    <div class="row carouselCustom my-md-4">
+
+                        <div class="col-6 col-md-4 m-md-4 m-2 wow rotateInDownLeft" data-wow-delay=".8s">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body text-center ">
+                                    
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">gold package</p>
+                                    <p class="my-5 text-black-50  ">
+                                        Our social growth campaign will have your socials come alive. With constant growth and engagement you will be sure to have the thriving you’ve been looking for.
+                                    </p>
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">$ 150</p>
+
+                                    <a href="#" class="btn btn-primary fw-light text-white my-4">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 m-md-4 m-2 wow rotateInDownLeft" data-wow-delay=".4s">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body text-center ">
+                                    
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">Diamond package</p>
+                                    <p class="my-5 text-black-50  ">
+                                        Our social growth campaign will have your socials come alive. With constant growth and engagement you will be sure to have the thriving you’ve been looking for.
+                                    </p>
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">$ 200</p>
+
+                                    <a href="#" class="btn btn-primary fw-light text-white my-4">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 m-md-4 m-2 wow rotateInDownLeft" data-wow-delay=".2s">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body text-center ">
+                                    
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">Simple package</p>
+                                    <p class="my-5 text-black-50  ">
+                                        Our social growth campaign will have your socials come alive. With constant growth and engagement you will be sure to have the thriving you’ve been looking for.
+                                    </p>
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">$ 50</p>
+
+                                    <a href="#" class="btn btn-primary fw-light text-white my-4">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 m-md-4 m-2  " >
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body text-center ">
+                                    
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">Premium package</p>
+                                    <p class="my-5 text-black-50  ">
+                                        Our social growth campaign will have your socials come alive. With constant growth and engagement you will be sure to have the thriving you’ve been looking for.
+                                    </p>
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">$ 400</p>
+
+                                    <a href="#" class="btn btn-primary fw-light text-white my-4">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 m-md-4 m-2">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body text-center ">
+                                    
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">gold package</p>
+                                    <p class="my-5 text-black-50  ">
+                                        Our social growth campaign will have your socials come alive. With constant growth and engagement you will be sure to have the thriving you’ve been looking for.
+                                    </p>
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">$ 150</p>
+
+                                    <a href="#" class="btn btn-primary fw-light text-white my-4">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 m-md-4 m-2">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body text-center ">
+                                    
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">Diamond package</p>
+                                    <p class="my-5 text-black-50  ">
+                                        Our social growth campaign will have your socials come alive. With constant growth and engagement you will be sure to have the thriving you’ve been looking for.
+                                    </p>
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">$ 200</p>
+
+                                    <a href="#" class="btn btn-primary fw-light text-white my-4">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 m-md-4 m-2">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body text-center ">
+                                    
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">Simple package</p>
+                                    <p class="my-5 text-black-50  ">
+                                        Our social growth campaign will have your socials come alive. With constant growth and engagement you will be sure to have the thriving you’ve been looking for.
+                                    </p>
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">$ 50</p>
+
+                                    <a href="#" class="btn btn-primary fw-light text-white my-4">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 m-md-4 m-2">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body text-center ">
+                                    
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">Premium package</p>
+                                    <p class="my-5 text-black-50  ">
+                                        Our social growth campaign will have your socials come alive. With constant growth and engagement you will be sure to have the thriving you’ve been looking for.
+                                    </p>
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">$ 400</p>
+
+                                    <a href="#" class="btn btn-primary fw-light text-white my-4">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 m-md-4 m-2">
+                            <div class="card shadow-sm customCard">
+                                <div class="card-body text-center ">
+                                    
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">Premium package</p>
+                                    <p class="my-5 text-black-50  ">
+                                        Our social growth campaign will have your socials come alive. With constant growth and engagement you will be sure to have the thriving you’ve been looking for.
+                                    </p>
+                                    <p class="fw-bold text-primary text-uppercase h4  my-5">$ 400</p>
+
+                                    <a href="#" class="btn btn-primary fw-light text-white my-4">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer container-fluid pt-5" id="about">
+        <div class="row">
+            <div class="col-12">
+                <div class="my-4 text-center wow bounceInDown">
+
+                    <h6 class="text-primary">Our Service</h6>
+                    <h4 class="text-uppercase">WHAT WE OFFER ?</h4>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="container p-0 p-md-2">
+                    <div class="row vh-50 my-5">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control mb-3" placeholder="Name">
+                                <input type="email" class="form-control mb-3" placeholder="Email">
+                                <textarea type="email" class="form-control mb-3"  rows="10" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 ">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25132.01234946622!2d96.91367061601508!3d20.551436216730757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1624198405506!5m2!1sen!2smm" style="border:0;" class="w-100 h-100 border rounded" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12 lastest">
+                        <div class="row my-5">
+                            <div class="col-12 col-md-4">
+                                <div class="my-4 text-center">
+
+                                    <h6 class="text-danger  mb-4">Our Service</h6>
+                                    <h4 class="text-uppercase fw-bolder text-primary mb-4">WHAT WE OFFER </h4>
+                                    <ul class="d-flex justify-content-evenly align-items-center list-unstyled">
+                                        <li><i class="fa fa-facebook-f"></i></li>
+                                        <li><i class="fa fa-google-plus"></i></li>
+                                        <li><i class="fa fa-youtube-play"></i></li>
+                                        <li><i class="fa fa-instagram"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <ul class=" list-unstyled">
+                                        <li class="d-block mb-2  w-100text-uppercase fw-bold">Quick Link</li>
+                                        <li class="d-block mb-2  w-100">Home</li>
+                                        <li class="d-block mb-2  w-100">Service</li>
+                                        <li class="d-block mb-2  w-100">Contact Us</li>
+                                        <li class="d-block mb-2  w-100">Blog</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6  col-md-4  d-flex justify-content-md-start align-items-start align-items-md-center">
+                                <div class="">
+                                    <ul class=" list-unstyled ">
+                                        <li class="d-block mb-2 ">Address Link</li>
+                                        <li class="d-block mb-2 "><i class="fa fa-phone me-3"></i>09 777126169</li>
+                                        <li class="d-block mb-2 "><i class="fa fa-map me-3"></i>Singapore</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="my-4 text-center">
+
+                                <h6 class="text-primary">Our Service</h6>
+                                <h4 class="text-uppercase">WHAT WE OFFER ?</h4>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control mb-3" placeholder="Name">
+                                        <input type="email" class="form-control mb-3" placeholder="Email">
+                                        <textarea type="email" class="form-control mb-3"  rows="10" placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25132.01234946622!2d96.91367061601508!3d20.551436216730757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1624198405506!5m2!1sen!2smm" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 lastest">
+                            <div class="row my-5">
+                                <div class="col-4">
+                                    <div class="my-4 text-center">
+
+                                        <h6 class="text-danger  mb-4">Our Service</h6>
+                                        <h4 class="text-uppercase fw-bolder text-primary mb-4">WHAT WE OFFER </h4>
+                                        <ul class="d-flex justify-content-evenly align-items-center list-unstyled">
+                                            <li><i class="fa fa-facebook-f"></i></li>
+                                            <li><i class="fa fa-google-plus"></i></li>
+                                            <li><i class="fa fa-youtube-play"></i></li>
+                                            <li><i class="fa fa-instagram"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-4 ">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <ul class=" list-unstyled">
+                                            <li class="d-block mb-2  w-100text-uppercase fw-bold">Quick Link</li>
+                                            <li class="d-block mb-2  w-100">Home</li>
+                                            <li class="d-block mb-2  w-100">Service</li>
+                                            <li class="d-block mb-2  w-100">Contact Us</li>
+                                            <li class="d-block mb-2  w-100">Blog</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <div class="d-flex align-items-center">
+                                        <ul class=" list-unstyled ">
+                                            <li class="d-block mb-2 ">Quick Link</li>
+                                            <li class="d-block mb-2 "><i class="fa fa-phone me-3"></i>09 777126169</li>
+                                            <li class="d-block mb-2 "><i class="fa fa-map me-5"></i>Singapore</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="js/popper.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="profile.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="vendor/wow/wow.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.js"></script>
+    <script>
+            wow = new WOW(
+            {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       true,       // default
+            live:         true        // default
+        }
+        )
+        wow.init();
+            $(document).ready(function(){
+  $('.carouselCustom').slick({
+	    dots:true,
+		infinte:false,
+    arrows:false,
+    slidesToShow: 3,
+    slidesToScroll:3,
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ],
+						
+		  });				
+});
+           
+
+
+let currentHeight = $(window).height();
+    console.log(currentHeight);
+
+    $(window).scroll(function(){
+        let thisCu = $(this).scrollTop();
+
+        if(thisCu > currentHeight-100){
+            $('.navigation').css('position','fixed').addClass('new');
+            $('#bar_cu').css('color','black');
+        }else{
+            $('.navigation').css('position','absolute').removeClass('new');
+            $('#bar_cu').css('color','white');
+            waypointCustom("home");
+            
+        }
+    })
+
+    $('#hanbargarMenu').click(function(){
+        $('.menuBar').toggleClass('menu  fadeIn ')
+    });
+    $('.closeMenu').click(function(){
+        $('.menuBar').toggleClass('menu').removeClass('fadeIn');
+    })
+    let allSection = document.querySelectorAll('section');
+    let changeArr = [...allSection];
+    
+    
+    changeArr.map((el,index) => {
+            
+            waypointCustom(el.id);
+            
+    });
+    
+    
+    
+      function waypointCustom(current){
+    
+        var waypoints = $(`#${current}`).waypoint(function(direction) {
+              if(direction === "down"){
+                console.log(current) 
+                $(`.nav-link`).removeClass('underline active');
+                $(`.nav-link[href='#${current}']`).addClass('underline active');
+              }
+          }, {
+            offset: '10%'
+          });
+          var waypoints = $(`#${current}`).waypoint(function(direction) {
+              if(direction === "up"){
+                console.log(current) 
+                $(`.nav-link`).removeClass('underline active');
+                $(`.nav-link[href='#${current}']`).addClass('underline active');
+              }
+          }, {
+            offset: '-20%'
+          });
+    
+      }
+
+
+    //   loading
+
+   $(window).on("load",function(){
+       $('.loading').fadeOut(1000,function(){
+           $(this).remove();
+       })
+   })
+
+    </script>
+</body>
+</html>
